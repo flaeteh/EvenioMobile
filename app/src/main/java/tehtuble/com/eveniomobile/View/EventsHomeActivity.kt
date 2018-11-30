@@ -28,7 +28,7 @@ class EventsHomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_events_home)
 
         recyclerView = findViewById(R.id.RecyclerView)
-       // textSearch = findViewById(R.id.et_search)
+        textSearch = findViewById(R.id.textSearch)
 
         recyclerView?.setHasFixedSize(true)
         val layoutManager = LinearLayoutManager(this@EventsHomeActivity)

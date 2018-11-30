@@ -54,6 +54,18 @@ class EventsHomeAdapter (
                         {
                             filteredList.add(row)
                         }
+                        if (row.eventLocation.toLowerCase().contains(charString.toLowerCase()))
+                        {
+                            filteredList.add(row)
+                        }
+                        if (row.eventTime.toLowerCase().contains(charString.toLowerCase()))
+                        {
+                            filteredList.add(row)
+                        }
+                        if (row.eventDescription.toLowerCase().contains(charString.toLowerCase()))
+                        {
+                            filteredList.add(row)
+                        }
                     }
                     filterEvents = filteredList
                 }
