@@ -2,7 +2,11 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- When selected -->
     <item android:drawable="@drawable/btn_redbg"
-          android:state_selected="true" />
+          android:state_selected="true"
+            android:color="@android:color/white"
+            />
 
-    <item android:drawable="@drawable/btn_redoutlinebg"/>
+    <item android:drawable="@drawable/btn_redoutlinebg"
+          android:color="@color/lightGray"
+            />
 </selector>
