@@ -4,13 +4,10 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.TabLayout
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.WindowManager
 import kotlinx.android.synthetic.main.activity_profile.*
-import tehtuble.com.eveniomobile.Adapter.ProfilePageAdapter
-import tehtuble.com.eveniomobile.Model.EventsProfileData
+import tehtuble.com.eveniomobile.View.Adapter.ProfilePageAdapter
 import tehtuble.com.eveniomobile.R
 
 class ProfileActivity : AppCompatActivity() {

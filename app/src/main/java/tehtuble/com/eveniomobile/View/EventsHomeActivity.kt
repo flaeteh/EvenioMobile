@@ -10,7 +10,7 @@ import android.text.TextWatcher
 import android.view.WindowManager
 import android.widget.EditText
 import kotlinx.android.synthetic.main.activity_events_home.*
-import tehtuble.com.eveniomobile.Adapter.EventsHomeAdapter
+import tehtuble.com.eveniomobile.View.Adapter.EventsHomeAdapter
 import tehtuble.com.eveniomobile.Model.EventsHomeData
 import tehtuble.com.eveniomobile.R
 

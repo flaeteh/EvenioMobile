@@ -1,4 +1,4 @@
-package tehtuble.com.eveniomobile.Adapter
+package tehtuble.com.eveniomobile.View.Adapter
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView

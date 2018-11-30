@@ -8,7 +8,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import tehtuble.com.eveniomobile.Adapter.ProfileAttendedRecyclerViewAdapter
+import tehtuble.com.eveniomobile.View.Adapter.ProfileAttendedRecyclerViewAdapter
 import tehtuble.com.eveniomobile.Model.EventsProfileData
 import tehtuble.com.eveniomobile.R
 
@@ -19,6 +19,7 @@ class AttendedEventsFragment : Fragment() {
 
     private var listener: OnFragmentInteractionListener? = null
     var recyclerView : RecyclerView? = null
+    var eventsData : EventsProfileData? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,10 +49,10 @@ class AttendedEventsFragment : Fragment() {
 
 
         for(i in 1..5) {
-            var eventsData = EventsProfileData("Converge", "04/07/2017", "6:00 PM", "SM North Edsa")
-
-            eventsList.add(eventsData)
+            eventsData = EventsProfileData("Converge", "04/07/2017", "6:00 PM", "SM North Edsa")
         }
+
+        eventsList.add(eventsData!!)
 
     }
 

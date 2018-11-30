@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                              xmlns:app="http://schemas.android.com/apk/res-auto"
                                              xmlns:tools="http://schemas.android.com/tools"
                                              android:layout_width="match_parent"
@@ -39,74 +39,118 @@
             app:layout_constraintGuide_percent="1.0"/>
 
     <android.support.v7.widget.CardView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardCornerRadius="10dp"
             android:layout_marginLeft="7dp"
             android:layout_marginRight="7dp"
             android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"
             app:cardUseCompatPadding="true"
-            app:cardPreventCornerOverlap="false"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            app:cardElevation="5dp"
+            android:id="@+id/cardView">
 
         <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="24dp">
-
-            <TextView
-                    android:id="@+id/txt_date"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="26dp"
-                    android:text="Date"
-                    android:textSize="11.5dp" />
-
-            <TextView
-                    android:id="@+id/txt_comma"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=", "
-                    android:textSize="11.5dp" />
-
-            <TextView
-                    android:id="@+id/txt_time"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" Time"
-                    android:textSize="11.5dp"
-            />
-
-        </LinearLayout>
-
-        <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="35dp"
-        >
+                android:layout_width="match_parent"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content">
 
             <TextView
-                    android:id="@+id/txt_transaction"
-                    android:layout_width="match_parent"
+                    android:text="[Event Name]"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Event Name"
-                    android:textSize="14.5dp"
+                    android:layout_marginBottom="2dp"
+                    android:id="@+id/txt_eventName"
+                    android:layout_weight="1"
                     android:textStyle="bold"
-                    android:layout_marginTop="26dp"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginBottom="25dp"/>
+                    android:textSize="22sp"
+                    android:textColor="@color/colorPrimaryDark"/>
 
             <View
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_width="35dp"
+                    android:layout_height="3dp"
+                    android:textAlignment="inherit"
+                    android:foregroundGravity="left"
+                    android:layout_marginBottom="7dp"
+                    android:id="@+id/horizontalLineview2"
+                    android:layout_weight="1"/>
+
+            <TextView
+                    android:text="@string/eventDescription"
                     android:layout_width="match_parent"
-                    android:layout_height="0.2dp"
-                    android:background="@android:color/darker_gray"/>
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_eventDescription"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"/>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1">
+
+                <TextView
+                        android:text="[Location]"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_location"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_weight="7"/>
+
+                <TextView
+                        android:text="[Date]"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_date"
+                        android:gravity="right"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_weight="1"/>
+
+                <TextView
+                        android:text="[Time]"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_time"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                <Button
+                        android:text="ATTEND"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/btn_redbg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:id="@+id/button2"
+                        android:letterSpacing="0.1"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/white"/>
+
+                <Button
+                        android:text="SHARE"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/btn_redbg"
+                        android:layout_height="50dp"
+                        android:id="@+id/button4"
+                        android:letterSpacing="0.1"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/white"/>
+            </LinearLayout>
 
         </LinearLayout>
 
     </android.support.v7.widget.CardView>
 
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

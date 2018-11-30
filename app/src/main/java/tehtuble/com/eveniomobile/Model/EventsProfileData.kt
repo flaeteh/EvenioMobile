@@ -4,11 +4,10 @@ open class EventsProfileData {
 
     //sample data only for display purposes
 
-    lateinit var eventName: String
-    lateinit var eventDate: String
-    lateinit var eventTime: String
-    lateinit var eventLocation: String
-
+    var eventName: String
+    var eventDate: String
+    var eventTime: String
+    var eventLocation: String
 
 
     constructor(

@@ -1,4 +1,4 @@
-package tehtuble.com.eveniomobile.Adapter
+package tehtuble.com.eveniomobile.View.Adapter
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
@@ -32,7 +32,7 @@ class EventsHomeAdapter (
         fun bind(eventsList: EventsHomeData) = with(itemView) {
             txt_date.text = eventsList.eventDescription
             txt_time.text = eventsList.eventTime
-            txt_transaction.text = eventsList.eventName
+            txt_eventName.text = eventsList.eventName
         }
     }
 

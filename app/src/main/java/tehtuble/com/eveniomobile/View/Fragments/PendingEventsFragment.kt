@@ -8,7 +8,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import tehtuble.com.eveniomobile.Adapter.ProfileAttendedRecyclerViewAdapter
+import tehtuble.com.eveniomobile.View.Adapter.ProfileAttendedRecyclerViewAdapter
 import tehtuble.com.eveniomobile.Model.EventsProfileData
 import tehtuble.com.eveniomobile.R
 
