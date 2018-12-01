@@ -135,7 +135,7 @@
             app:layout_constraintTop_toTopOf="@+id/guideline11" android:textSize="16sp"/>
 
     <EditText
-            android:id="@+id/et_name"
+            android:id="@+id/user_name"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@null"
@@ -151,7 +151,7 @@
             android:textColor="@color/colorPrimaryDark"/>
 
     <EditText
-            android:id="@+id/et_email"
+            android:id="@+id/user_email"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@null"
@@ -200,7 +200,7 @@
             app:layout_constraintTop_toTopOf="@+id/guideline9" />
 
     <EditText
-            android:id="@+id/et_idnum"
+            android:id="@+id/user_id"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@null"
@@ -229,7 +229,7 @@
             app:layout_constraintTop_toTopOf="@+id/guideline10" />
 
     <EditText
-            android:id="@+id/et_password"
+            android:id="@+id/user_pass"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@null"
@@ -343,9 +343,11 @@
 
     <Button
             android:background="@drawable/arrow"
+            android:onClick="option"
             android:layout_width="45dp"
             android:layout_height="40dp"
-            android:id="@+id/btn_register" app:layout_constraintStart_toStartOf="@+id/guideline12"
+            android:id="@+id/btnRegister"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
             android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline13"
             app:layout_constraintTop_toTopOf="@+id/guideline20" android:layout_marginBottom="8dp"

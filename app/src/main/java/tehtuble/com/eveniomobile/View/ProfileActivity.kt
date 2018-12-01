@@ -10,20 +10,41 @@ import kotlinx.android.synthetic.main.activity_profile.*
 import tehtuble.com.eveniomobile.View.Adapter.ProfilePageAdapter
 import tehtuble.com.eveniomobile.R
 import android.view.ViewGroup
-
+import android.widget.TextView
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import tehtuble.com.eveniomobile.Model.UserProfile
 
 
 class ProfileActivity : AppCompatActivity() {
+    private var profileReference: DatabaseReference? = null
+    private var auth: FirebaseAuth? = null
+    private var currentUserId: String? = null
+    var userName: TextView? = null
+    var email: TextView? = null
+    var studNum: TextView? = null
+    internal var userProfile = UserProfile()
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_profile)
-
+        userName = findViewById(R.id.name)
+        email = findViewById(R.id.email)
+        studNum = findViewById(R.id.studNum)
         var tabLayout = findViewById<View>(R.id.tabLayout)
         var pageAdapter = ProfilePageAdapter(supportFragmentManager, 2)
         var attendedEventsFragment = pageAdapter.getAttendedEventsFragment()
         var pendingEventsFragment = pageAdapter.getPendingEventsFragment()
+        auth = FirebaseAuth.getInstance()
+        currentUserId = auth!!.currentUser!!.uid
+
+        profileReference = FirebaseDatabase.getInstance().getReference().child("Users").child(currentUserId!!)
+
+        userProfile.getUserProfile(profileReference, userName, email, studNum)
 
 
         viewPager.adapter = pageAdapter

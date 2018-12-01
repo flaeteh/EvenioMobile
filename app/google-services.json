@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "65137453297",
+    "firebase_url": "https://eveniomobile.firebaseio.com",
+    "project_id": "eveniomobile",
+    "storage_bucket": "eveniomobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65137453297:android:fda3e149d839d227",
+        "android_client_info": {
+          "package_name": "tehtuble.com.eveniomobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65137453297-d8e39a5f4tmo1hnogp1bspndsvct4jcp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tehtuble.com.eveniomobile",
+            "certificate_hash": "97e67809a8288e0b5bf4c70ab02eaddc8714c2d1"
+          }
+        },
+        {
+          "client_id": "65137453297-7k9jblgofo6sf973tbifcj1kc4tgb72e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw9QGDLTToMQQwsBjUFaeOJ6Iz3LbEei4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "65137453297-7k9jblgofo6sf973tbifcj1kc4tgb72e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -12,11 +12,11 @@
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/icslogodark" />
+            app:srcCompat="@drawable/icslogodark"/>
 
     <android.support.constraint.Guideline
             android:id="@+id/guideline6"
@@ -119,6 +119,7 @@
             android:id="@+id/btn_login"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:onClick="option"
             android:layout_marginStart="48dp"
             android:layout_marginLeft="48dp"
             android:layout_marginTop="35dp"
@@ -164,13 +165,13 @@
             android:layout_height="0dp"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            app:layout_constraintBottom_toBottomOf="@+id/et_name"
+            app:layout_constraintBottom_toBottomOf="@+id/user_name"
             app:layout_constraintStart_toStartOf="@+id/img_whiterounded"
-            app:layout_constraintTop_toTopOf="@+id/et_name"
+            app:layout_constraintTop_toTopOf="@+id/user_name"
             app:srcCompat="@drawable/mailicon" />
 
     <EditText
-            android:id="@+id/et_name"
+            android:id="@+id/user_name"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="8dp"
@@ -195,12 +196,12 @@
             app:srcCompat="@drawable/passwordicon"
             app:layout_constraintStart_toStartOf="@+id/img_whiterounded2" android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
-            app:layout_constraintBottom_toBottomOf="@+id/et_password"
-            app:layout_constraintTop_toTopOf="@+id/et_password" android:layout_marginBottom="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/user_pass"
+            app:layout_constraintTop_toTopOf="@+id/user_pass" android:layout_marginBottom="2dp"
             android:layout_marginTop="2dp"/>
 
     <EditText
-            android:id="@+id/et_password"
+            android:id="@+id/user_pass"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="8dp"
